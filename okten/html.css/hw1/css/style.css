@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+
+h1{
+    background: bisque;
+    color: #de112f;
+}
+
+p{
+    color: blue;
+    background: yellow;
+}
+
+h2{
+    background: burlywood;
+    color: yellow;
+}
+
+li{
+    background: sienna;
+    color: #10f19e;
+}
