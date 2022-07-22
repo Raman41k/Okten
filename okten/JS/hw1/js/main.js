@@ -82,5 +82,5 @@ console.log('User name:', name);
 let longName = prompt("Your long name: ");
 console.log('User long name:', longName);
 
-let age = prompt("Your age: ");
+let age = +prompt("Your age: ");
 console.log('User age:', age);
