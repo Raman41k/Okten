@@ -39,21 +39,36 @@ let firstObj = {
     title: 'Harry Potter',
     pageCount: 750,
     genre: 'fantastic',
-    authors: ['Stepan', 45]
+    authors: [
+        {
+            name: 'Stepan',
+            age: 17
+        }
+    ]
 }
 
 let secondObj = {
     title: 'Harry Potter',
     pageCount: 750,
     genre: 'fantastic',
-    authors: ['Stepan', 45]
+    authors: [
+        {
+            name: 'Stepan',
+            age: 17
+        }
+    ]
 }
 
 let thirdObj = {
     title: 'Harry Potter',
     pageCount: 750,
     genre: 'fantastic',
-    authors: ['Stepan', 45]
+    authors: [
+        {
+            name: 'Stepan',
+            age: 17
+        }
+    ]
 }
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
