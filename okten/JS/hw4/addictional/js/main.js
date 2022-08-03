@@ -244,23 +244,59 @@
 //     {name: 'Ulysses', pages: 589, authors: ['James Joyce', 'Marcel Proust'], genre: ['Nonfiction', 'Fiction']},
 //     {name: 'Don Quixot', pages: 1478, authors: 'Miguel de Cervantes', genre: 'Satire'},
 //     {name: 'One Hundred Years of Solitude', pages: 457, authors: ['Marcel Proust', 'Gabriel Garcia Marquez'], genre: ['Suspense', 'Travel']},
-//     {name: 'The Great Gatsby ', pages: 523, authors: 'F. Scott Fitzgerald', genre: 'Review'}
+//     {name: 'The Great Gatsby ', pages: 2578, authors: 'F. Scott Fitzgerald', genre: 'Review'}
 // ];
 
 // -знайти найбільшу книжку.
 
+// let max = 0;
 // for (const book of books) {
-//     for (const bookKey in book) {
-//         if (Math.max(book['pages'])){
-//
-//         }
+//     if (book.pages > max){
+//         max = book.pages;
 //     }
 // }
+// console.log(max);
 
 // - знайти книжку/ки з найбільшою кількістю жанрів
+
+// let max = [];
+// for (let book of books) {
+//     if (book.genre.length > max){
+//         max = book.genre;
+//     }
+// }
+// console.log(max);
+
 // - знайти книжку/ки з найдовшою назвою
+
+// let max = 0;
+// for (let book of books) {
+//     if (book.name.length > max){
+//         max = book.name.length;
+//     }
+// }
+// console.log(max);
+
 // - знайти книжку/ки які писали 2 автори
+
+// let max = 0;
+// for (const book of books) {
+//     if (book.authors.length === 2){
+//         max = book.authors;
+//     }
+// }
+// console.log(max);
+
 // - знайти книжку/ки які писав 1 автор
+
+
+// let max = 0;
+// for (const book of books) {
+//     if (book.authors.length === 1){
+//         max = book.authors;
+//     }
+// }
+// console.log(max);
 
 // ---------------------------------------------------Addictional 2 --------------------------------------------
 /*За допомогою циклу вивести всю інформацію про користувачів використовуючи шаблон
@@ -528,7 +564,7 @@
 // ---------------------------------------------------Addictional 3 --------------------------------------------
 
 // 1. Створити пустий масив та :
-let array = [];
+// let array = [];
 //     a. заповнити його 50 парними числами за допомоги циклу.
 
 // for (let i = 0; i < 51; i+=2) {
@@ -592,7 +628,16 @@ let array = [];
 // }
 
 // 5. Вивести кожен елемент масиву, сусід справа якого є парним
-// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56 - ?????????????????
+// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+
+// let array = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+//
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0){
+//         console.log(array[i -1]);
+//     }
+// }
+
 // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
 
 // let sums = [100,250,50,168,120,345,188];
@@ -626,6 +671,7 @@ let array = [];
 
 // - Дано 2 масиви з рівною кількістю об'єктів. ?????????????????????????????????????????????????????????????????????
 // Масиви:
+
 // let newArray = [];
 //     let usersWithId = [
 //         {id: 1, name: 'vasya', age: 31, status: false},
@@ -644,9 +690,11 @@ let array = [];
 // for (const userWithId of usersWithId) {
 //     for (let citiesWithIdElement of citiesWithId) {
 //         if (userWithId['id'] === citiesWithIdElement['user_id']){
-//
+//             userWithId.country = citiesWithIdElement['country'];
+//             userWithId.city = citiesWithIdElement['city'];
 //         }
 //     }
+//     console.log(userWithId);
 // }
 
 //
@@ -667,9 +715,6 @@ let array = [];
 //             },
 //             // TO BE CONTINUED .....
 //         ]
-//
-//
-//
 //
 //- Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 
@@ -693,8 +738,8 @@ let array = [];
 // console.log(numbers);
 // console.log(newNumbers);
 
-let letters = ['a', 'b', 'c'];
-let word = '';
+// let letters = ['a', 'b', 'c'];
+// let word = '';
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 
 // for (let i = 0; i < letters.length; i++) {
