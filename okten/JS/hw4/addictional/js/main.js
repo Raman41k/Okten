@@ -239,64 +239,63 @@
 
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
-// let books = [
-//     {name: 'In Search of Lost Time', pages: 147, authors: 'Marcel Proust', genre: 'Nonfiction'},
-//     {name: 'Ulysses', pages: 589, authors: ['James Joyce', 'Marcel Proust'], genre: ['Nonfiction', 'Fiction']},
-//     {name: 'Don Quixot', pages: 1478, authors: 'Miguel de Cervantes', genre: 'Satire'},
-//     {name: 'One Hundred Years of Solitude', pages: 457, authors: ['Marcel Proust', 'Gabriel Garcia Marquez'], genre: ['Suspense', 'Travel']},
-//     {name: 'The Great Gatsby ', pages: 2578, authors: 'F. Scott Fitzgerald', genre: 'Review'}
-// ];
+let books = [
+    {name: 'In Search of Lost Time', pages: 3745, authors: ['Marcel Proust'], genre: 'Nonfiction'},
+    {name: 'Ulysses', pages: 589, authors: ['James Joyce', 'Marcel Proust'], genre: ['Nonfiction', 'Fiction']},
+    {name: 'Don Quixot', pages: 1478, authors: ['Miguel de Cervantes'], genre: 'Satire'},
+    {name: 'One Hundred Years of Solitude', pages: 457, authors: ['Marcel Proust', 'Gabriel Garcia Marquez'], genre: ['Suspense', 'Travel']},
+    {name: 'The Great Gatsby ', pages: 2578, authors: ['F. Scott Fitzgerald'], genre: 'Review'}
+];
 
 // -знайти найбільшу книжку.
 
-// let max = 0;
+// let max = books[0];
 // for (const book of books) {
-//     if (book.pages > max){
-//         max = book.pages;
+//     if (book.pages > max.pages){
+//         max = book;
 //     }
 // }
 // console.log(max);
 
 // - знайти книжку/ки з найбільшою кількістю жанрів
 
-// let max = [];
+// let max = books[0];
 // for (let book of books) {
-//     if (book.genre.length > max){
-//         max = book.genre;
+//     if (book.genre > max.genre){
+//         max = book;
 //     }
 // }
 // console.log(max);
 
 // - знайти книжку/ки з найдовшою назвою
 
-// let max = 0;
+// let max = books[0];
 // for (let book of books) {
-//     if (book.name.length > max){
-//         max = book.name.length;
+//     if (book.name.length > max.name.length){
+//         max = book;
 //     }
 // }
 // console.log(max);
 
 // - знайти книжку/ки які писали 2 автори
 
-// let max = 0;
+// let max = books[0];
 // for (const book of books) {
 //     if (book.authors.length === 2){
-//         max = book.authors;
+//         max = book;
+//         console.log(max);
 //     }
 // }
-// console.log(max);
 
 // - знайти книжку/ки які писав 1 автор
 
-
-// let max = 0;
+// let max = books[0];
 // for (const book of books) {
 //     if (book.authors.length === 1){
-//         max = book.authors;
+//         max = book;
+//         console.log(max);
 //     }
 // }
-// console.log(max);
 
 // ---------------------------------------------------Addictional 2 --------------------------------------------
 /*За допомогою циклу вивести всю інформацію про користувачів використовуючи шаблон
