@@ -31,7 +31,7 @@
 
 // - створити функцію яка повертає найбільше число з масиву
 
-// let array = [-200, 13, -222, -500, 999, -21, -70, 700, -700];
+// let array = [-200, 13, -222, -500, 999, -21, -70, 700, 3333];
 //
 // let maxInArray = (array) => {
 //     let max = array[0];
@@ -41,9 +41,9 @@
 //             max = array[i];
 //         }
 //     }
-//     console.log(max);
+//     return max;
 // }
-// maxInArray(array);
+// console.log(maxInArray(array));
 
 // - створити функцію яка повертає найменьше число з масиву
 
@@ -132,15 +132,23 @@
 // Двожина масиву від 2 до 100
 
 // let zeroEnd = (array) => {
-//     for (let i = array.length - 1; i >= 0; i--) {
+//     let zeroCount = 0;
+//     let newArray = [];
+//     let index = 0;
+//     for (let i = 0; i  < array.length; i++) {
 //         if (array[i] === 0) {
-//             array.splice(i,1);
-//             array.push(0);
+//             zeroCount++;
+//         } else {
+//             newArray[index++] = array[i];
 //         }
 //     }
-//     console.log(array);
+//     for (let i = 0; i < zeroCount; i++) {
+//         newArray[newArray.length] = 0;
+//     }
+//     return newArray;
 // }
-// zeroEnd([1,0,6,0,3]);
+//
+// zeroEnd([0,0,1,0]);
 
 // EXAMPLE:
 // [1,0,6,0,3] => [1,6,3,0,0]

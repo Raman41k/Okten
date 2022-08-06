@@ -109,7 +109,7 @@ showObjects(users);
 
 // - створити функцію яка повертає найменьше число з масиву
 
-let arrayNumbers = [105, 2745, 14, 4789, 7899, 652, 789, 800, 999, 1001];
+let arrayNumbers = [105, 2745, 14, 4789, 7899, 652, 7, 800, 999, 1001];
 function findMax(array) {
     let max = array[0];
     for (let i = 0; i < array.length; i++) {
