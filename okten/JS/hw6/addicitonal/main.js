@@ -98,7 +98,7 @@
 // arr.filter(value => {
 //     if (value % 2 === 0) {
 //         console.log(value);
-//     }
+//     }В
 // });
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
@@ -110,7 +110,20 @@
 // }
 // console.log(capitalize('hello world how are you'));
 
-// - Створити функцію-валідатор для адрес електронної пошти. Перевірка повинна включати в себе :данні до знака равлика(@), наявність равлика, крапку яка знаходиться не меньше ніж на 2 символ далі після равлика, функція не чутлива до регістру (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
+// - Створити функцію-валідатор для адрес електронної пошти. Перевірка повинна включати в себе :данні до знака равлика(@), наявність равлика, крапку яка знаходиться не менше ніж на 2 символ далі після равлика, функція не чутлива до регістру (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
+
+// function emailCheck(email) {
+//     if (email.includes('@') ){
+//         console.log(email.split('@'));
+//     } else {
+//         console.log("You have no @");
+//     }
+//
+//  return userMail;
+// }
+// //
+// console.log(emailCheck('@gmail.com'));
+
 // Протестувати на значеннях
 // someemail@gmail.com
 // someeMAIL@gmail.com
@@ -121,75 +134,75 @@
 // Для тих, хто дуже розумний, та почне використовувати регулярні вирази одразу "ні". Своїм мозком подумайте над протоколом, з регулярками будете потім бавитись.
 //
 // - є масив
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-    }
-];
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
 // відсортувати його в спадаючому порядку за кількістю елементів в полі modules
 
 // console.log(coursesArray.sort((fisrt, second) => fisrt.modules.length - second.modules.length));
@@ -221,9 +234,73 @@ let coursesArray = [
 // console.log(cutString(str, 5));
 
 // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+
+// let books = [
+//     {
+//         name: 'book1',
+//         pages: 11,
+//         authors: ['One'],
+//         genres: ['First genre', 'Second genre']
+//     },
+//     {
+//         name: 'bookBLABLA1234',
+//         pages: 1111,
+//         authors: ['One', 'Two'],
+//         genres: ['First genre', 'Second genre', 'Third genre', 'Fourth genre']
+//     },
+//     {
+//         name: 'book3',
+//         pages: 200,
+//         authors: ['One', 'Two'],
+//         genres: ['First genre', 'Second genre', 'Third genre']
+//     },
+//     {
+//         name: 'bookBLABLA',
+//         pages: 35,
+//         authors: ['One'],
+//         genres: ['First genre', 'Second genre']
+//     }
+// ];
+
 // -знайти наібльшу книжку.
+
+// let max = books[0];
+//
+// books.forEach(book =>{
+//     if (book.pages > max.pages){
+//         max = book;
+//     }
+// });
+//
+// console.log(max);
+
 // - знайти книжку/ки з найбільшою кількістю жанрів
+
+// books.forEach(book => {
+//     if (book.genres > max.genres){
+//         max = book;
+//     }
+// })
+// console.log(max);
+
 // - знайти книжку/ки з найдовшою назвою
+
+// books.forEach(book => {
+//     if (book.name.length > max.name.length){
+//         max = book;
+//     }
+// })
+//
+// console.log(max);
+
 // - знайти книжку/ки які писали 2 автори
+
+// console.log(books.filter(book => book.authors.length === 2));
+
 // - знайти книжку/ки які писав 1 автор
+
+// console.log(books.filter(book => book.authors.length === 1));
+
 // - вісортувати книжки по кількості сторінок по зростанню
+
+// console.log(books.sort((firstBook, secondBook) => firstBook.pages - secondBook.pages));
