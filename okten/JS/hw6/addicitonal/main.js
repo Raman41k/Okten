@@ -114,15 +114,25 @@
 
 // function emailCheck(email) {
 //     if (email.includes('@') ){
-//         console.log(email.split('@'));
+//         let [firstPart, secondPart] = email.split('@');
+//         if (firstPart !== undefined){
+//             let [before, after] = secondPart.split('.');
+//             if (before.length > 2){
+//                 console.log("Email is good");
+//             } else {
+//                 return 'Bad domen';
+//             }
+//         } else {
+//             console.log('No email name');
+//         }
 //     } else {
 //         console.log("You have no @");
 //     }
 //
-//  return userMail;
+//   return email;
 // }
 // //
-// console.log(emailCheck('@gmail.com'));
+// console.log(emailCheck('some.email@gmail.com'));
 
 // Протестувати на значеннях
 // someemail@gmail.com
