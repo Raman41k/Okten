@@ -213,11 +213,23 @@ let coursesArray = [
 //     {title: 'FullStack', monthDuration: 7},
 //     {title: 'Frontend', monthDuration: 4}
 // ];
+//
 // let div = document.createElement('div');
 //
 // for (let course of coursesAndDurationArray) {
-//     let text =
+//     let child = document.createElement('div');
+//     div.append(child);
+//
+//     let h2 = document.createElement('h2');
+//     h2.append(course.title);
+//
+//     let p = document.createElement('p');
+//     p.append(course.monthDuration);
+//
+//     child.append(h2,p);
 // }
+//
+// document.body.append(div);
 
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
