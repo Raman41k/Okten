@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+.member{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#text{
+    height: 100px;
+    width: 100px;
+    background: #10f19e;
+}
