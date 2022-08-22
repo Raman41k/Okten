@@ -191,7 +191,7 @@ let coursesArray = [
 
 // let arr = ['Main','Products','About us','Contacts']
 //
-// let menu = document.getElementsByClassName('menu');
+// let menu = document.getElementsByClassName('menu')[0];
 // console.log(menu);
 // for (const arrElement of arr) {
 //     let li = document.createElement('li');
