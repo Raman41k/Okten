@@ -10,7 +10,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         for (const item of data) {
 
             let a = document.createElement('a');
-            a.href = `user-details.html?id=${item.id}`;
+            a.href = `../user details/user-details.html?id=${item.id}`;
             a.innerText = "More info";
 
             let child = document.createElement('div');

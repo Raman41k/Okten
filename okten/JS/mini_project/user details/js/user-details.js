@@ -38,7 +38,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                     for (const item of data) {
                         let anchor = document.createElement('a');
                         anchor.innerText = 'See more';
-                        anchor.href = `post-details.html?id=${id}`;
+                        anchor.href = `../post details/post-details.html?id=${id}`;
 
                         let titleDivItem = document.createElement('div');
                         titleDivItem.append(item.title, anchor);
