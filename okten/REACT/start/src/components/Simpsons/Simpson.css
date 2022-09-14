@@ -1,0 +1,11 @@
+.simpsonContainer{
+    width: 500px;
+    padding: 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid teal;
+}
